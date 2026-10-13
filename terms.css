@@ -1,0 +1,23 @@
+.terms-page .site-header{gap:20px}
+.terms-heading{background:var(--primary);color:var(--white);padding-block:64px 70px}
+.terms-heading h1{font-size:clamp(36px,5vw,64px);margin:18px 0 22px}
+.terms-heading p{max-width:620px;font-size:15px;color:oklch(.93 .012 20)}
+.terms-heading p:first-child{font-size:12px}
+.terms-layout{display:grid;grid-template-columns:240px minmax(0,720px);justify-content:space-between;gap:64px;padding-block:64px 40px}
+.terms-contents{position:sticky;top:130px;align-self:start}
+.terms-contents h2{font-family:var(--body);font-size:14px;font-weight:700;letter-spacing:0;margin-bottom:18px}
+.terms-contents nav{display:flex;position:static;flex-direction:column;align-items:flex-start;gap:0;padding:0;box-shadow:none}
+.terms-contents nav a{font-size:13px;font-weight:500;padding-block:9px;color:var(--muted)}
+.terms-copy{min-width:0}
+.terms-copy p{font-size:15px;line-height:1.9;color:var(--muted);max-width:72ch}
+.terms-copy .terms-intro{color:var(--ink);font-size:17px;line-height:1.85;padding-bottom:36px}
+.terms-copy section{border-top:1px solid var(--line);padding-block:32px;scroll-margin-top:130px}
+.terms-copy h2{font-size:clamp(24px,2.8vw,32px);margin-bottom:20px}
+.terms-copy p+p{margin-top:16px}
+.terms-copy .terms-contact{background:var(--surface);border-radius:8px;padding:30px;margin-top:16px;border:0}
+.terms-contact .button{margin:24px 20px 0 0}
+.terms-contact .text-link{margin-top:22px;color:var(--primary)}
+.footer-bottom a{font-size:12px;color:var(--primary);text-decoration:underline;text-underline-offset:4px}
+@media(max-width:900px){.terms-layout{grid-template-columns:190px minmax(0,1fr);gap:36px}}
+@media(max-width:700px){.terms-heading{padding-block:40px 44px}.terms-layout{grid-template-columns:1fr;gap:32px;padding-top:32px}.terms-contents{position:static}.terms-contents nav{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}.terms-contents nav a{font-size:12px}.terms-copy .terms-intro{font-size:16px}.terms-copy .terms-contact{padding:24px}.terms-page .site-header>.text-link{font-size:12px;gap:6px}.terms-copy section{scroll-margin-top:105px}}
+@media(max-width:370px){.terms-page .site-header{gap:10px}.terms-contents nav{grid-template-columns:1fr}}
